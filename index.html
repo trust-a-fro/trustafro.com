@@ -352,62 +352,64 @@
               and let us make your next move a breeze!
             </p>
           </div>
-          <form id="form">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              maxlength="80"
-              autocomplete="name"
-              minlength="2"
-              required
-              title="Enter a valid name"
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required
-              maxlength="128"
-              placeholder="email@example.com"
-              pattern='^([^<>\(\)\[\]\\.,;:\s@"]{1,63})@((((?!-)(?!.*--)[a-zA-Z\-0-9]{1,63}(?<!-))+\.)+([a-zA-Z]{2,63}))$'
-              title="Enter a valid email"
-            />
-            <label for="phone">Phone Number</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Your Phone Number"
-              autocomplete="tel"
-              required
-            />
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              rows="4"
-              placeholder="What are your moving needs?"
-              maxlength="1152"
-              required
-            ></textarea>
-            <div class="center">
-              <button type="submit" class="btn">Send Message</button>
+          <div class="form-container">
+            <form id="form">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                maxlength="80"
+                autocomplete="name"
+                minlength="2"
+                required
+                title="Enter a valid name"
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                maxlength="128"
+                placeholder="email@example.com"
+                pattern='^([^<>\(\)\[\]\\.,;:\s@"]{1,63})@((((?!-)(?!.*--)[a-zA-Z\-0-9]{1,63}(?<!-))+\.)+([a-zA-Z]{2,63}))$'
+                title="Enter a valid email"
+              />
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your Phone Number"
+                autocomplete="tel"
+                required
+              />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="What are your moving needs?"
+                maxlength="1152"
+                required
+              ></textarea>
+              <div class="center">
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+            </form>
+            <div id="loading">
+              <p>Sending your message...</p>
+              <div id="spinner"></div>
             </div>
-          </form>
-          <div id="loading">
-            <p>Sending your message...</p>
-            <div id="spinner"></div>
-          </div>
-          <div id="success">
-            <p>
-              Your message has been sent. Thank you! <br />
-              We'll get back to you as soon as we can.
-            </p>
+            <div id="success">
+              <p>
+                Your message has been sent. Thank you! <br />
+                We'll get back to you as soon as we can.
+              </p>
+            </div>
           </div>
         </div>
       </section>
