@@ -296,15 +296,14 @@ h4 {
   }
 }
 .highlights {
-  --stroke: hsl(207deg 80% 30%);
+  --stroke: hsl(211deg 80% 30%);
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
   color: hsl(208deg 80% 95%);
-  -webkit-text-stroke: 1px var(--stroke);
   text-shadow: 1px 1px 0 var(--stroke), -1px 1px 0 var(--stroke),
     -1px -1px 0 var(--stroke), 1px -1px 0 var(--stroke);
   font-size: 2rem;
@@ -375,7 +374,7 @@ h4 {
 }
 @media (width < 20.75rem) {
   .highlights {
-    -webkit-text-stroke: 0;
+    /* -webkit-text-stroke: 0; */
     font-weight: 500;
   }
 }
