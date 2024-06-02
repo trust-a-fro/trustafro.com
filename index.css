@@ -21,6 +21,60 @@ body {
   line-height: inherit;
   margin: 0;
 }
+#ext-links {
+  padding: 0.5rem;
+  background-color: #202229;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+#ext-links.loading {
+  padding: 0;
+  height: 0;
+}
+#ext-links.ready {
+  height: 3.5rem;
+}
+@media (width > 32rem) {
+  #ext-links {
+    padding: 0.5rem 1rem;
+  }
+}
+#ext-links ul,
+#ext-links li,
+#ext-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#ext-links li {
+  flex: 1 1 20%;
+}
+#ext-links a {
+  padding: 0.5rem;
+  border: 0.125rem solid #bfc6d9;
+  border-radius: 100%;
+  color: #dfe2ec;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+#ext-links.loading a {
+  transform: scale(0);
+  color: #222;
+  border-color: #222;
+}
+#ext-links a:hover,
+#ext-links a:focus {
+  color: #eff1f5;
+  border-color: #e6e8f0;
+  transform: scale(1.04);
+}
+#ext-links a svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
 header {
   position: relative;
   text-align: center;

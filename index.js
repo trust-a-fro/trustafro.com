@@ -47,6 +47,7 @@ const cover = getEl("cover");
 const bg = getEl("bg");
 const ellipseBG = getEl("ellipse-bg");
 const contactLink = getEl("jump-to");
+const topLinks = getEl("ext-links");
 window.addEventListener("load", () => {
   window.setTimeout(() => {
     bg.className = "ready";
@@ -57,4 +58,7 @@ window.addEventListener("load", () => {
     ellipseBG.classList.add("ready");
     contactLink.className = "ready";
   }, 610);
+  window.setTimeout(() => {
+    topLinks.className = "ready";
+  }, 990);
 });
